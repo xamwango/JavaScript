@@ -30,9 +30,9 @@
       }
       .to-right {
         display: flex;
-        /* float: right; */
       }
     </style>
+    <script src="themeScript.js" defer></script>
   </head>
   <body>
     <div class="header">
@@ -43,7 +43,6 @@
         <a href="#">Kitchen Ware</a>
       </div>
       <div class="to-right">
-        <!-- <a href="#"><button type="reset">Reset</button></a> -->
         <a href="#"
           ><div>
             <select name="theme" id="theme">
@@ -57,29 +56,9 @@
       </div>
     </div>
     <div class="container">
-      <h2>Background Color Selector</h2>
+      <h2 style="border: 5px solid rgb(51, 51, 105); padding: 5px">
+        Theme Selector
+      </h2>
     </div>
-
-    <!-- Script -->
-    <script>
-      const theme = document.querySelector("#theme");
-
-      theme.addEventListener("change", (event) => {
-        if (event.target.value === "default") {
-          console.log("Page default theme");
-          document.body.style.backgroundColor = "white";
-        } else if (event.target.value === "light") {
-          console.log("Light theme");
-          document.body.style.backgroundColor = "darkgrey";
-        } else if (event.target.value === "mild") {
-          console.log("Mild theme");
-          document.body.style.backgroundColor = "#a89999";
-        } else {
-          console.log("Dark theme");
-          document.body.style.backgroundColor = "black";
-        }
-      });
-      //   set the theme color
-    </script>
   </body>
 </html>
